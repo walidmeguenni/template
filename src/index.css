@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fira Code', monospace;
+}
+.dash-title{
+    color:#FFBE40;
+    font-size: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.border{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,210px);
+    column-gap: 65px;
+    height: auto;
+    width: auto;
+    margin-top: 1rem;
+}
+.cart{
+    width: 250px;
+    height: 110px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    box-shadow:  2px 2px 2px rgb(0 0 0 / 20%);
+}
+ 
+.cart-number{
+    color:var(--text-grey) ;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+.cart-info{
+    position: relative;
+    color:var(--text-grey);
+    padding-left: 10px;
+    top: 25px;
+}
+.moreinfo {
+    width: 250px;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 0 0 7px 7px;
+    text-align: center;
+
+}
+.moreinfo a{
+    text-decoration: none;
+    color: var(--text-grey);
+}
+.usage{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card-usage{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,210px);
+    column-gap: 65px;
+}
+.card-usage .card{
+width: 250px;
+height: 270px;
+background: #FFF;
+border-radius: 7px;
+box-shadow:  2px 2px 2px rgb(0 0 0 / 20%);
+text-align: center;
+margin-bottom: 25px;
+}
+.circle{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-left: 32px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 20px; 
+}
+.volume{
+    position: relative;
+    top:68px;
+    text-align: center;
+}
+.card p{
+    position: relative;
+    top:15px;
 }
