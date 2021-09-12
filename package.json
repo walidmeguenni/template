@@ -1,0 +1,15 @@
+{
+  "name": "warehouse-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "server": "npm run start --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install": "npm install --prefix server && npm install --prefix client"
+  },
+  "author": "walid Meguenni",
+  "license": "MIT"
+}
